@@ -1,5 +1,5 @@
 
-UPDATES
+PLANNED UPDATES
 ------------------------------------------------------------------------
 
 * Planning to Add Availability for New emotions 
