@@ -45,7 +45,7 @@ if user_input:
         threshold = 0.25
         bin_labels = (predictions >= threshold).astype(int)
         labels_text = ['positive' if label == 1 else 'negative' for label in bin_labels.flatten()]
-        emotion_response = f"**Emotion:** {labels_text[0]} 😊" if labels_text[0] == "positive" else f"**Emotion:** {labels_text[0]} 😢"
+        emotion_response = f"**Emotion:** {labels_text[0]} I will play happy music now!😊" if labels_text[0] == "positive" else f"**Emotion:** {labels_text[0]} 😢"
 
         # Display assistant response
         with st.chat_message("assistant"):
