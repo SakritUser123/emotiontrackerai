@@ -10,7 +10,7 @@ with open('emotions.pkl', 'rb') as f:
 # Initialize the vectorizer
 vectorizer = TextVectorization(max_tokens=50, output_mode='int')
 
-# Page Title
+# Set up Streamlit UI
 st.set_page_config(page_title="Emotion Analyzer AI", page_icon="😃")
 st.title("💬 Emotion Analyzer AI")
 
@@ -18,7 +18,7 @@ st.title("💬 Emotion Analyzer AI")
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# Display previous messages
+# Display previous chat messages
 for msg in st.session_state.messages:
     with st.chat_message(msg["role"]):
         st.markdown(msg["content"])
@@ -31,16 +31,16 @@ if user_input:
     with st.chat_message("user"):
         st.markdown(user_input)
 
-    # Save user message to session state
+    # Store user message in chat history
     st.session_state.messages.append({"role": "user", "content": user_input})
 
     if user_input.strip():
-        # Vectorize the input text
+        # Vectorize input text (unchanged logic)
         user_input_list = [user_input]
         vectorizer.adapt(user_input_list)  # Train vectorizer on input
         vectorized_texts = vectorizer(user_input_list)
 
-        # Predict using the model
+        # Predict using the loaded model (unchanged logic)
         predictions = loaded_model.predict(vectorized_texts)
         threshold = 0.25
         bin_labels = (predictions >= threshold).astype(int)
@@ -51,6 +51,7 @@ if user_input:
         with st.chat_message("assistant"):
             st.markdown(emotion_response)
 
-        # Save assistant response to session state
+        # Store assistant response in chat history
         st.session_state.messages.append({"role": "assistant", "content": emotion_response})
+
 
