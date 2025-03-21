@@ -45,6 +45,9 @@ if user_input:
         threshold = 0.25
         bin_labels = (predictions >= threshold).astype(int)
         labels_text = ['positive' if label == 1 else 'negative' for label in bin_labels.flatten()]
+        if labels_text == 'positive':
+            audio_file = 'https://soundcloud.com/settingsailrecords/sets/morning-chill-morning-vibes?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing'
+            st.audio(audio_file,format='audio/mp3')
         emotion_response = f"**Emotion:** {labels_text[0]} I will play happy music now!😊" if labels_text[0] == "positive" else f"**Emotion:** {labels_text[0]} 😢"
 
         # Display assistant response
