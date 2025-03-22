@@ -53,11 +53,8 @@ if user_input:
 
 # List of online MP3 URLs
         happy_music = [
-        "https://www.bensound.com/royalty-free-music/track/lucky-good-vibes-indie",  # WAV but works
-        "https://www.bensound.com/royalty-free-music/track/piece-shiny-indie-rock",
-        "https://www.bensound.com/royalty-free-music/track/patience-feel-good-indie",
-        "https://www.bensound.com/royalty-free-music/track/smooth-moves-shiny-groovy",
-        "https://www.bensound.com/royalty-free-music/track/fiddlesticks-jazzy-goofy-funny"
+        "https://soundcloud.com/settingsailrecords/sets/morning-chill-morning-vibes?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"  # WAV but works
+        
     ]
 
 
