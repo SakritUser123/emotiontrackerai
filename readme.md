@@ -1,4 +1,19 @@
 
+UPDATES 3/21/25
+-----------------------------------------------------------------------
+* Added a better Chat UI
+* Added payment software using venmo
+* Added Emoji's to website
+
+
+
+UPDATES 3/20/25
+----------------------------------------------------------------------
+* Recent Started Hosting With Streamlit
+* Linked Github Repository With Streamlit
+
+
+
 PLANNED UPDATES
 ------------------------------------------------------------------------
 
