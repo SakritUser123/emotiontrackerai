@@ -49,8 +49,9 @@ if user_input:
         import streamlit as st
 
          # Free sample MP3
-
-        st.audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" )
+        if predictions >= threshold:
+            
+            st.audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" )
 
         
         emotion_response = f"**Emotion:** {labels_text[0]} I will play happy music now!😊" if labels_text[0] == "positive" else f"**Emotion:** {labels_text[0]} 😢"
