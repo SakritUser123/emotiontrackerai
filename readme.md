@@ -1,4 +1,7 @@
-
+UPDATES 3/22/25
+-----------------------------------------------------------------------
+* Added emoji on payment button to make more user-friendly.
+  
 UPDATES 3/21/25
 -----------------------------------------------------------------------
 * Added a better Chat UI
