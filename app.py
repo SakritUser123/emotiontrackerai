@@ -49,18 +49,32 @@ if user_input:
         import streamlit as st
 
          # Free sample MP3
-        
+        import streamlit as st
+
+# List of online MP3 URLs
+        happy_music = [
+        "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+        "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Scott_Holmes_Music/Happy_Music/Scott_Holmes_Music_-_Happy_Music.mp3",
+        "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Scott_Holmes_Music/Uplifting/Scott_Holmes_Music_-_Upbeat_Party.mp3",
+        "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Kevin_MacLeod/Happy_Boy_Theme/Kevin_MacLeod_-_Happy_Boy_Theme.mp3",
+        "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Komiku/THE_BLACK_STONE_MAN/KOMIKU_-_Friends_Forever.mp3"
+        ]
+
+
+
+
+
 
         
         emotion_response = f"**Emotion:** {labels_text[0]} I will play happy music now!😊 Here is the audio:" if labels_text[0] == "positive" else f"**Emotion:** {labels_text[0]} 😢"
         
-
+        import random
         # Display assistant response
         with st.chat_message("assistant"):
             st.markdown(emotion_response)
         if predictions >= threshold:
-            
-            st.audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" )
+            random_song = random.choice(happy_music)
+            st.audio(random_song)
 
         # Store assistant response in chat history
         st.session_state.messages.append({"role": "assistant", "content": emotion_response})
