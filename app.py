@@ -13,7 +13,7 @@ vectorizer = TextVectorization(max_tokens=50, output_mode='int')
 # Set up Streamlit UI
 st.set_page_config(page_title="Emotion Analyzer AI", page_icon="😃")
 st.title("💬 Emotion Analyzer AI")
-st.link_button("Donate $3 Using Venmo!", "https://venmo.com/SakritUser123?txn=pay&amount=3")
+st.link_button("💻 Pay $3 on Venmo 😊", "https://venmo.com/SakritUser123?txn=pay&amount=3")
 
 # Initialize chat history in session state
 if "messages" not in st.session_state:
