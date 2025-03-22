@@ -13,7 +13,7 @@ vectorizer = TextVectorization(max_tokens=50, output_mode='int')
 # Set up Streamlit UI
 st.set_page_config(page_title="Emotion Analyzer AI", page_icon="😃")
 st.title("💬 Emotion Analyzer AI")
-st.link_button("💻 Pay $3 on Venmo 😊", "https://venmo.com/SakritUser123?txn=pay&amount=3")
+st.link_button("💻 Pay $3 on Venmo! 😊", "https://venmo.com/SakritUser123?txn=pay&amount=3")
 
 # Initialize chat history in session state
 if "messages" not in st.session_state:
@@ -46,9 +46,9 @@ if user_input:
         threshold = 0.25
         bin_labels = (predictions >= threshold).astype(int)
         labels_text = ['positive' if label == 1 else 'negative' for label in bin_labels.flatten()]
-        if labels_text == 'positive':
-            audio_file = 'summer-is-here-311746.mp3'
-            st.audio(audio_file,format='audio/mp3')
+        
+        audio_file = 'summer-is-here-311746.mp3'
+        st.audio(audio_file,format='audio/mp3')
         emotion_response = f"**Emotion:** {labels_text[0]} I will play happy music now!😊" if labels_text[0] == "positive" else f"**Emotion:** {labels_text[0]} 😢"
 
         # Display assistant response
