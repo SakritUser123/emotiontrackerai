@@ -53,7 +53,11 @@ if user_input:
 
 # List of online MP3 URLs
         happy_music = [
-        "summer-is-here-611743.mp3"  # WAV but works
+        "https://soundcloud.com/mozart/sets/mozart-piano-sonatas?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "https://soundcloud.com/katyakramer-lapin/sets/satie-debussy-beethoven-bach?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "https://soundcloud.com/larah-armstrong-342920891/sets/mozart-for-study-stay-in-the?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "https://soundcloud.com/focusmusicconsord/sets/bach-beethoven-mozart-for?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "https://soundcloud.com/friendlythug/happy-new-year?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"# WAV but works
         
     ]
 
