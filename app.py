@@ -53,7 +53,7 @@ if user_input:
 
 # List of online MP3 URLs
         happy_music = [
-        "https://soundcloud.com/settingsailrecords/sets/morning-chill-morning-vibes?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"  # WAV but works
+        "summer-is-here-611743.mp3"  # WAV but works
         
     ]
 
