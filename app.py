@@ -47,8 +47,7 @@ if user_input:
         bin_labels = (predictions >= threshold).astype(int)
         labels_text = ['positive' if label == 1 else 'negative' for label in bin_labels.flatten()]
         
-        audio_file = 'summer-is-here-311746.mp3'
-        st.audio(audio_file,format='audio/mp3')
+        st.audio('summer-is-here-311746.mp3',format='audio/mp3')
         emotion_response = f"**Emotion:** {labels_text[0]} I will play happy music now!😊" if labels_text[0] == "positive" else f"**Emotion:** {labels_text[0]} 😢"
 
         # Display assistant response
