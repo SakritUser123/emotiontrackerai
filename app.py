@@ -53,13 +53,14 @@ if user_input:
 
         
         emotion_response = f"**Emotion:** {labels_text[0]} I will play happy music now!😊 Here is the audio:" if labels_text[0] == "positive" else f"**Emotion:** {labels_text[0]} 😢"
-        if predictions >= threshold:
-            
-            st.audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" )
+        
 
         # Display assistant response
         with st.chat_message("assistant"):
             st.markdown(emotion_response)
+        if predictions >= threshold:
+            
+            st.audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" )
 
         # Store assistant response in chat history
         st.session_state.messages.append({"role": "assistant", "content": emotion_response})
