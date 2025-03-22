@@ -19,7 +19,7 @@ UPDATES 3/20/25
 
 PLANNED UPDATES
 ------------------------------------------------------------------------
-
+* Planning to add an sign in feature to remember people username and store past conversations.
 * Planning to Add Availability for New emotions 
 * Also Planning to make changes to UI.
 * Also,being able to provide a song based on the emotion a person is feeling.
