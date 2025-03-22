@@ -46,8 +46,13 @@ if user_input:
         threshold = 0.25
         bin_labels = (predictions >= threshold).astype(int)
         labels_text = ['positive' if label == 1 else 'negative' for label in bin_labels.flatten()]
+        import streamlit as st
+
+         # Free sample MP3
+
+        st.audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" )
+
         
-        st.audio('summer-is-here-311746.mp3')
         emotion_response = f"**Emotion:** {labels_text[0]} I will play happy music now!😊" if labels_text[0] == "positive" else f"**Emotion:** {labels_text[0]} 😢"
 
         # Display assistant response
