@@ -53,11 +53,11 @@ if user_input:
 
 # List of online MP3 URLs
         happy_music = [
-        "https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav",  # WAV but works
-        "https://www2.cs.uic.edu/~i101/SoundFiles/BabyElephantWalk60.wav",
-        "https://samplelib.com/lib/preview/mp3/sample-3s.mp3",
-        "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
-        "https://www.learningcontainer.com/wp-content/uploads/2020/02/Happy-Background-Music.mp3"
+        "https://www.bensound.com/royalty-free-music/track/lucky-good-vibes-indie",  # WAV but works
+        "https://www.bensound.com/royalty-free-music/track/piece-shiny-indie-rock",
+        "https://www.bensound.com/royalty-free-music/track/patience-feel-good-indie",
+        "https://www.bensound.com/royalty-free-music/track/smooth-moves-shiny-groovy",
+        "https://www.bensound.com/royalty-free-music/track/fiddlesticks-jazzy-goofy-funny"
     ]
 
 
