@@ -1,6 +1,9 @@
+
 UPDATES 3/22/25
 -----------------------------------------------------------------------
 * Added emoji on payment button to make more user-friendly.
+* Added list of happy music to display for happy emotions only
+* AI gives link for music once user responds
   
 UPDATES 3/21/25
 -----------------------------------------------------------------------
