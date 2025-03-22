@@ -75,6 +75,7 @@ if user_input:
         if predictions >= threshold:
             random_song = random.choice(happy_music)
             st.audio(random_song)
+            st.write(f"Now playing: [Click here to open]({random_song})")
 
         # Store assistant response in chat history
         st.session_state.messages.append({"role": "assistant", "content": emotion_response})
