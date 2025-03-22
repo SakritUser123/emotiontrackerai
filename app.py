@@ -53,12 +53,12 @@ if user_input:
 
 # List of online MP3 URLs
         happy_music = [
-        "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-        "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Scott_Holmes_Music/Happy_Music/Scott_Holmes_Music_-_Happy_Music.mp3",
-        "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Scott_Holmes_Music/Uplifting/Scott_Holmes_Music_-_Upbeat_Party.mp3",
-        "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Kevin_MacLeod/Happy_Boy_Theme/Kevin_MacLeod_-_Happy_Boy_Theme.mp3",
-        "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Komiku/THE_BLACK_STONE_MAN/KOMIKU_-_Friends_Forever.mp3"
-        ]
+        "https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav",  # WAV but works
+        "https://www2.cs.uic.edu/~i101/SoundFiles/BabyElephantWalk60.wav",
+        "https://samplelib.com/lib/preview/mp3/sample-3s.mp3",
+        "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
+        "https://www.learningcontainer.com/wp-content/uploads/2020/02/Happy-Background-Music.mp3"
+    ]
 
 
 
