@@ -1,4 +1,6 @@
-
+REMINDERS 3/29/25
+-----------------------------------------------
+*WORK ON SVM INSTEAD OF DEEP LEARNING and use other techniques
 UPDATES 3/22/25
 -----------------------------------------------------------------------
 * Added emoji on payment button to make more user-friendly.
