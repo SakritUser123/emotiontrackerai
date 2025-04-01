@@ -66,8 +66,10 @@ if user_input:
 
 
 
-        emotion = "On A Scale From 0 to 1, I think This Statement Is"
+        emotion = "On A Scale From 0 to 1 With, 0 being negative and 1 being positive , I think This Statement Is"
         emotion_response = predictions 
+        answer = 'Which Means The Statement is: '
+        final = labels_text
         
         
         import random
@@ -75,6 +77,9 @@ if user_input:
         with st.chat_message("assistant"):
             st.markdown(emotion)
             st.markdown(emotion_response)
+            st.markdown(answer)
+            st.markdown(final)
+            
         if predictions >= threshold:
             random_song = random.choice(happy_music)
             st.audio(random_song)
