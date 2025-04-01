@@ -66,14 +66,14 @@ if user_input:
 
 
 
-        
+        emotion = "On A Scale From 0 to 1, I think This Statement Is"
         emotion_response = predictions 
         
         
         import random
         # Display assistant response
         with st.chat_message("assistant"):
-            st.markdown(emotion_response)
+            st.markdown(emotion,emotion_response)
         if predictions >= threshold:
             random_song = random.choice(happy_music)
             st.audio(random_song)
