@@ -4,7 +4,9 @@ import tensorflow as tf
 from tensorflow.keras.layers import TextVectorization
 
 # Add a button to Streamlit
-st.link_button('✨Upgrade to EmotionAI Plus! ✨')
+
+if 'page' not in st.session_state:
+    st.session_state.page = "home"
 # Load the pre-trained model
 with open('emotions.pkl', 'rb') as f:
     loaded_model = pickle.load(f)
