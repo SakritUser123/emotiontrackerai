@@ -43,7 +43,7 @@ if user_input:
 
         # Predict using the loaded model (unchanged logic)
         predictions = loaded_model.predict(vectorized_texts)
-        threshold = 0.25
+        threshold = 0.5
         bin_labels = (predictions >= threshold).astype(int)
         labels_text = ['positive' if label == 1 else 'negative' for label in bin_labels.flatten()]
         import streamlit as st
