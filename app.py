@@ -7,6 +7,10 @@ from tensorflow.keras.layers import TextVectorization
 
 if 'page' not in st.session_state:
     st.session_state.page = "home"
+
+if st.button('** UPGRADE TO PLUS **'):
+    st.session_state.page = "form"
+    st.experimental_rerun()
 # Load the pre-trained model
 with open('emotions.pkl', 'rb') as f:
     loaded_model = pickle.load(f)
