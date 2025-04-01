@@ -1,3 +1,7 @@
+REMINDERS 4/1/25
+---------------------------------------------
+* Add a Upgrade To Plus Button Which offers an AI with abilities to classify many emotions rather than only good and bad.
+
 UPDATES 4/1/25
 -----------------------------------------------
 * In AI Response I added the decimal number as part of my response and expanded my response length from AI.
