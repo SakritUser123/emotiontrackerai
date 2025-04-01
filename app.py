@@ -67,7 +67,7 @@ if user_input:
 
 
         
-        emotion_response = "On a Scale From 0 to 1 with 0 being negative and 1 being positive, it ranks this statement a" + predictions + 'This Would mean this statement is' + labels_text
+        emotion_response = predictions 
         
         
         import random
