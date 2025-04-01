@@ -2,6 +2,29 @@ import streamlit as st
 import pickle
 import tensorflow as tf
 from tensorflow.keras.layers import TextVectorization
+st.markdown("""
+    <style>
+    .stButton>button {
+        background-color: gold;
+        color: white;
+        font-size: 16px;
+        padding: 10px 24px;
+        border-radius: 8px;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+    }
+    .stButton>button:hover {
+        background-color: #ffcc00;
+        transform: scale(1.1);
+        box-shadow: 0 6px 12px rgba(255, 215, 0, 0.5);
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# Add a button to Streamlit
+if st.button('Click Me!'):
+    st.write('Gold button clicked!')
 
 # Load the pre-trained model
 with open('emotions.pkl', 'rb') as f:
