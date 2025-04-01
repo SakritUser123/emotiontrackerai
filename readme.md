@@ -1,6 +1,6 @@
-REMINDERS 3/29/25
+REMINDERS 4/1/25
 -----------------------------------------------
-*WORK ON SVM INSTEAD OF DEEP LEARNING and use other techniques
+* In AI Response I added the decimal number as part of my response and expanded my response length from AI.
 UPDATES 3/22/25
 -----------------------------------------------------------------------
 * Added emoji on payment button to make more user-friendly.
