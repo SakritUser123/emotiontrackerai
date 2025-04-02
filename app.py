@@ -78,9 +78,11 @@ if user_input:
         import time
         def smooth_text(emotion,typing_speed = 0.1):
             typed_text = ''
+            placeholder = st.empty()
             for char in text:
                 typed_text += char
                 st.empty().text(typed_text)
+                placeholder.write(typed_text)
                 time.sleep(typing_speed)
             
         # Display assistant response
