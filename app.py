@@ -75,9 +75,17 @@ if user_input:
         
         
         import random
+        import time
+        def smooth_text(emotion,typing_speed = 0.1):
+            typed_text = ''
+            for char in text:
+                typed_text += char
+                st.empty().text(typed_text)
+                time.sleep(typing_speed)
+            
         # Display assistant response
         with st.chat_message("assistant"):
-            st.write_stream(emotion)
+            st.write(smooth_text())
             st.markdown(emotion_response)
             st.markdown(answer)
             st.markdown(final)
