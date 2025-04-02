@@ -77,7 +77,7 @@ if user_input:
         import random
         # Display assistant response
         with st.chat_message("assistant"):
-            st.markdown(emotion)
+            st.write(emotion)
             st.markdown(emotion_response)
             st.markdown(answer)
             st.markdown(final)
