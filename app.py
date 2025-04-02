@@ -87,7 +87,7 @@ if user_input:
             
         # Display assistant response
         with st.chat_message("assistant"):
-            st.write(smooth_text())
+            smooth_text()
             st.markdown(emotion_response)
             st.markdown(answer)
             st.markdown(final)
