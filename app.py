@@ -64,6 +64,14 @@ if user_input:
 
         emotion = "The Decimal Given Is How Sure The Model Thinks The statement is positive if the decimal is greater than 0.50 then, it is more likely to be positive!"
         emotion_response = predictions 
+        emoji = ''
+        if emotion_response > 0.50:
+            emoji = '😊'
+        if emotion_response < 0.50:
+            emoji = '😔'
+        if emotion_response == 0.50:
+            emoji = '🤔'
+            
         
         
         
@@ -74,6 +82,7 @@ if user_input:
         with st.chat_message("assistant"):
             st.markdown(emotion)
             st.markdown(emotion_response)
+            st.markdown(emoji)
             
             
         if predictions > 0.50:
