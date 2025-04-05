@@ -44,24 +44,6 @@ if user_input:
         
         import streamlit as st
 
-         # Free sample MP3
-        import streamlit as st
-
-# List of online MP3 URLs
-        happy_music = [
-        "https://soundcloud.com/mozart/sets/mozart-piano-sonatas?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-        "https://soundcloud.com/katyakramer-lapin/sets/satie-debussy-beethoven-bach?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-        "https://soundcloud.com/larah-armstrong-342920891/sets/mozart-for-study-stay-in-the?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-        "https://soundcloud.com/focusmusicconsord/sets/bach-beethoven-mozart-for?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-        "https://soundcloud.com/friendlythug/happy-new-year?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"# WAV but works
-        
-    ]
-
-
-
-
-
-
         emotion = "The Decimal Given Is How Sure The Model Thinks The statement is positive if the decimal is greater than 0.50 then, it is more likely to be positive!"
         emotion_response = predictions 
         emoji = ''
@@ -78,9 +60,6 @@ if user_input:
             
         
         
-        
-        import random
-        
             
         # Display assistant response
         with st.chat_message("assistant"):
@@ -89,9 +68,7 @@ if user_input:
             st.markdown(emoji)
             st.markdown(res)
             
-        if predictions > 0.50:
-            random_song = random.choice(happy_music)
-            st.audio(random_song)
+        
 
         # Store assistant response in chat history
         st.session_state.messages.append({"role": "assistant", "content": emotion_response})
