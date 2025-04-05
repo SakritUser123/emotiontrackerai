@@ -37,14 +37,10 @@ if user_input:
     if user_input.strip():
         # Vectorize input text (unchanged logic)
         user_input_list = [user_input]
-        vectorizer.adapt(user_input_list)  # Train vectorizer on input
-        vectorized_texts = vectorizer(user_input_list)
 
         # Predict using the loaded model (unchanged logic)
-        predictions = loaded_model.predict(vectorized_texts)
-        threshold = 0.5
-        bin_labels = (predictions >= threshold).astype(int)
-        labels_text = ['positive' if label == 1 else 'negative' for label in bin_labels.flatten()]
+        predictions = loaded_model.predict_proba(vectorizer.transform([user_input]))[0][1]
+        
         import streamlit as st
 
          # Free sample MP3
@@ -67,8 +63,7 @@ if user_input:
 
         emotion = "On A Scale From 0 to 1 With, 0 being negative and 1 being positive , I think This Statement Is"
         emotion_response = predictions 
-        answer = 'Which Means The Statement is: '
-        final = labels_text
+        
         
         
         import random
@@ -78,8 +73,7 @@ if user_input:
         with st.chat_message("assistant"):
             st.markdown(emotion)
             st.markdown(emotion_response)
-            st.markdown(answer)
-            st.markdown(final)
+            
             
         if predictions >= threshold:
             random_song = random.choice(happy_music)
