@@ -65,12 +65,16 @@ if user_input:
         emotion = "The Decimal Given Is How Sure The Model Thinks The statement is positive if the decimal is greater than 0.50 then, it is more likely to be positive!"
         emotion_response = predictions 
         emoji = ''
+        res = ''
         if emotion_response > 0.50:
             emoji = '😊'
+            res = 'Wow! That is great to hear.You can listen to this song to match your emotion.
         if emotion_response < 0.50:
             emoji = '😔'
+            res = 'Oh no! Thats sad to hear .You can feel better be feeling this song that matches your emotion!
         if emotion_response == 0.50:
             emoji = '🤔'
+            
             
         
         
@@ -83,7 +87,7 @@ if user_input:
             st.markdown(emotion)
             st.markdown(emotion_response)
             st.markdown(emoji)
-            
+            st.markdown(res)
             
         if predictions > 0.50:
             random_song = random.choice(happy_music)
