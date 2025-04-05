@@ -62,7 +62,7 @@ if user_input:
 
 
 
-        emotion = "On A Scale From 0 to 1 With, 0 being negative and 1 being positive , I think This Statement Is"
+        emotion = "The Decimal Given Is How Sure The Model Thinks The statement is positive if the decimal is greater than 0.50 then, it is more likely to be positive!"
         emotion_response = predictions 
         
         
