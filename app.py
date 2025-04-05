@@ -68,10 +68,10 @@ if user_input:
         res = ''
         if emotion_response > 0.50:
             emoji = '😊'
-            res = 'Wow! That is great to hear.You can listen to this song to match your emotion.
+            res = 'Wow! That is great to hear.You can listen to this song to match your emotion.'
         if emotion_response < 0.50:
             emoji = '😔'
-            res = 'Oh no! Thats sad to hear .You can feel better be feeling this song that matches your emotion!
+            res = 'Oh no! Thats sad to hear .You can feel better be feeling this song that matches your emotion!'
         if emotion_response == 0.50:
             emoji = '🤔'
             
