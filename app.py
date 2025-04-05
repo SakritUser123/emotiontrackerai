@@ -6,11 +6,8 @@ from tensorflow.keras.layers import TextVectorization
 # Add a button to Streamlit
 
 # Load the pre-trained model
-with open('emotions.pkl', 'rb') as f:
-    loaded_model = pickle.load(f)
-
-# Initialize the vectorizer
-vectorizer = TextVectorization(max_tokens=50, output_mode='int')
+with open('LogRegModel.pkl', 'rb') as f:
+    loaded_model = pickle.load(f0
 
 # Set up Streamlit UI
 st.set_page_config(page_title="Emotion Analyzer AI", page_icon="😃")
