@@ -6,9 +6,9 @@ import pickle5 as pickle
 # Add a button to Streamlit
 
 # Load the pre-trained model
-with open('LogRegModel.pkl', 'rb') as f:
+with open('LogRegModel(1).pkl', 'rb') as f:
     loaded_model = pickle.load(f)
-with open('vectorizer.pkl', 'rb') as file:
+with open('Vectorizer(1).pkl', 'rb') as file:
     vectorizer = pickle.load(file)
 
 # Set up Streamlit UI
