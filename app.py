@@ -7,7 +7,7 @@ import pickle
 # Load the pre-trained model
 with open('LogisticRegModel.pkl', 'rb') as f:
     loaded_model = pickle.load(f)
-with open('VectorizerWork.pkl', 'rb') as file:
+with open('WorkVector.pkl', 'rb') as file:
     vectorizer = pickle.load(file)
 
 # Set up Streamlit UI
