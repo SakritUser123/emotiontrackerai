@@ -1,6 +1,6 @@
-REMINDERS 4/1/25
----------------------------------------------
-* Add a Upgrade To Plus Button Which offers an AI with abilities to classify many emotions rather than only good and bad.
+UPDATES 4/5/25
+----------------------------------------------
+* Changed to Logistic Regression Model instead of DL model and improved the model.More Accurate now in sentiment analysis.
 
 UPDATES 4/1/25
 -----------------------------------------------
@@ -34,4 +34,5 @@ PLANNED UPDATES
 * Planning to Add Availability for New emotions 
 * Also Planning to make changes to UI.
 * Also,being able to provide a song based on the emotion a person is feeling.
+* Add a Upgrade To Plus Button Which offers an AI with abilities to classify many emotions rather than only good and bad.
 ------------------------------------------------------------------------
