@@ -76,7 +76,7 @@ if user_input:
             st.markdown(emotion_response)
             
             
-        if predictions >= threshold:
+        if predictions > 0.50:
             random_song = random.choice(happy_music)
             st.audio(random_song)
 
