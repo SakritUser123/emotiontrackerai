@@ -7,7 +7,7 @@ from tensorflow.keras.layers import TextVectorization
 
 # Load the pre-trained model
 with open('LogRegModel.pkl', 'rb') as f:
-    loaded_model = pickle.load(f0
+    loaded_model = pickle.load(f)
 
 # Set up Streamlit UI
 st.set_page_config(page_title="Emotion Analyzer AI", page_icon="😃")
