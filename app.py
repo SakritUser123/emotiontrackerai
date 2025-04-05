@@ -1,8 +1,7 @@
 import streamlit as st
-import pickle
 import tensorflow as tf
 from tensorflow.keras.layers import TextVectorization
-import pickle5 as pickle
+import pickle
 # Add a button to Streamlit
 
 # Load the pre-trained model
