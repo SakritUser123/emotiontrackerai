@@ -93,8 +93,9 @@ if selected_tab == 'Larger Emotion':
         if user_input.strip():
             user_input_list = [user_input]
             predictions = multi_loaded_model.predict(multi_vectorizer.transform([user_input]))
-
+            explain = '0 is for sadness , 1 is for joy,2 is for love , 3 is for anger , 4 is for fear and 5 is for surprise'
             with st.chat_message("assistant"):
+                st.markdown(explain)
                 st.markdown(predictions)
 
             st.session_state.larger_messages.append({"role": "assistant", "content": predictions})
