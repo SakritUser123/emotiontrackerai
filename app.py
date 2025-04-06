@@ -21,13 +21,14 @@ GitHub: [The repository for this website!](https://github.com/SakritUser123/E-CO
 """)
 if selected_tab == 'Smaller Emotion':
     # Load the pre-trained model
+    st.set_page_config(page_title="Emotion Analyzer AI", page_icon="😃")
     with open('LogisticRegModel.pkl', 'rb') as f:
         loaded_model = pickle.load(f)
     with open('WorkVector.pkl', 'rb') as file:
         vectorizer = pickle.load(file)
     
     # Set up Streamlit UI
-    st.set_page_config(page_title="Emotion Analyzer AI", page_icon="😃")
+    
     st.title("💬 Emotion Analyzer AI")
     st.link_button("💻 Pay $3 on Venmo 🤖😊", "https://venmo.com/SakritUser123?txn=pay&amount=3")
     st.sidebar.title("Models")
