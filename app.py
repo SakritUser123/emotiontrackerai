@@ -130,7 +130,7 @@ if selected_tab == 'Larger Emotion':
             user_input_list = [user_input]
     
             # Predict using the loaded model (unchanged logic)
-            predictions = multi_loaded_model.predict(multi_vectorizer.transform([user_input])
+            predictions = multi_loaded_model.predict(multi_vectorizer.transform([user_input]))
             
             import streamlit as st
     
