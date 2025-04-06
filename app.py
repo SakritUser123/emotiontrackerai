@@ -9,13 +9,13 @@ with open('LogisticRegModel.pkl', 'rb') as f:
     loaded_model = pickle.load(f)
 with open('WorkVector.pkl', 'rb') as file:
     vectorizer = pickle.load(file)
-if st.button("Page 1"):
-    st.switch_page("multiemotions.py")
+
 # Set up Streamlit UI
 st.set_page_config(page_title="Emotion Analyzer AI", page_icon="😃")
 st.title("💬 Emotion Analyzer AI")
 st.link_button("💻 Pay $3 on Venmo 🤖😊", "https://venmo.com/SakritUser123?txn=pay&amount=3")
-
+if st.button("Go to Multi-Emotions Page"):
+    st.session_state.page = "multiemotions"
 # Initialize chat history in session state
 if "messages" not in st.session_state:
     st.session_state.messages = []
