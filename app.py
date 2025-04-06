@@ -21,6 +21,9 @@ if "page" in st.session_state and st.session_state.page == "multiemotions":
     # You can add the logic for the "multiemotions" page here
     st.title("Multi-Emotions Page")
     st.write("This is where multi-emotion analysis would take place.")
+    st.set_page_config(page_title="Emotion Analyzer AI", page_icon="😃")
+    st.title("💬  Multi Emotion Analyzer AI")
+    
 else:
     # Initialize chat history in session state
     if "messages" not in st.session_state:
