@@ -1,5 +1,5 @@
 import streamlit as st
-
+st.set_page_config(page_title="Emotion Analyzer AI", page_icon="😃")
 # Set up the Streamlit sidebar for navigation
 st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to:", ("Home", "Multi-Emotions"))
