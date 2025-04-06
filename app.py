@@ -11,7 +11,7 @@ selected_tab = st.sidebar.radio("Select A Model",tabs)
 if selected_tab == "Home":
     st.title("Home Page")
     st.write("Use The navigation bar to navigate the various models on the website!")
-    
+    st.link_button("💻 Pay $3 on Venmo 🤖😊", "https://venmo.com/SakritUser123?txn=pay&amount=3")
 
 
     st.write("You can donate to this website it will help out a lot!")
@@ -31,7 +31,7 @@ if selected_tab == 'Smaller Emotion':
     # Set up Streamlit UI
     
     st.title("💬 Emotion Analyzer AI")
-    st.link_button("💻 Pay $3 on Venmo 🤖😊", "https://venmo.com/SakritUser123?txn=pay&amount=3")
+    
     
     
     # Initialize chat history in session state
