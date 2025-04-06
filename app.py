@@ -22,7 +22,7 @@ GitHub: [The repository for this website!](https://github.com/SakritUser123/E-CO
 """)
 if selected_tab == 'Smaller Emotion':
     # Load the pre-trained model
-    st.set_page_config(page_title="Emotion Analyzer AI", page_icon="😃")
+    
     with open('LogisticRegModel.pkl', 'rb') as f:
         loaded_model = pickle.load(f)
     with open('WorkVector.pkl', 'rb') as file:
