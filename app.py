@@ -4,11 +4,10 @@ from tensorflow.keras.layers import TextVectorization
 import pickle
 # Add a button to Streamlit
 
-
+st.set_page_config(page_title="Emotion Analyzer AI", page_icon="😃")
 tabs = ["Home","Smaller Emotion","Larger Emotion"]
 selected_tab = st.sidebar.radio("Select A Model",tabs)
 if selected_tab == "Home":
-    st.set_page_config(page_title="Emotion Analyzer AI", page_icon="😃")
     st.title("Home Page")
     st.write("Use The navigation bar to navigate the various models on the website!")
     
