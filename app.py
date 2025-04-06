@@ -32,7 +32,7 @@ if selected_tab == 'Smaller Emotion':
     
     st.title("💬 Emotion Analyzer AI")
     st.link_button("💻 Pay $3 on Venmo 🤖😊", "https://venmo.com/SakritUser123?txn=pay&amount=3")
-    st.sidebar.title("Models")
+    
     
     # Initialize chat history in session state
     if "messages" not in st.session_state:
