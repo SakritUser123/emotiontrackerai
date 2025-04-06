@@ -17,7 +17,18 @@ st.link_button("💻 Pay $3 on Venmo 🤖😊", "https://venmo.com/SakritUser123
 st.sidebar.title("Models")
 tabs = ["Home","Smaller Emotion","Larger Emotion"]
 selected_tab = st.sidebar.radio("Select A Model",tabs)
+if selected_tab == "Home":
+    st.title("Home Page")
+    st.write("Use The navigation bar to navigate the various models on the website!")
+    
 
+
+    st.write("You can donate to this website it will help out a lot!")
+    st.markdown("""
+---
+Contact: [veerendrasakthi.prabhurajan@gmail.com]  
+GitHub: [The repository for this website!](https://github.com/SakritUser123/E-COLI-AI-Detector)
+""")
 
 
 
