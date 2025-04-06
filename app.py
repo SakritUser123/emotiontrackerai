@@ -20,7 +20,7 @@ if selected_tab == "Home":
     st.markdown("""
     ---
     Contact: [veerendrasakthi.prabhurajan@gmail.com]  
-    GitHub: [The repository for this website!](https://github.com/SakritUser123/E-COLI-AI-Detector)
+    GitHub: [The repository for this website!](https://github.com/SakritUser123/emotiontrackerai)
     """)
 
 if selected_tab == 'Two Emotion Classification':
