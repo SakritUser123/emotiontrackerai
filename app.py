@@ -14,6 +14,10 @@ with open('WorkVector.pkl', 'rb') as file:
 st.set_page_config(page_title="Emotion Analyzer AI", page_icon="😃")
 st.title("💬 Emotion Analyzer AI")
 st.link_button("💻 Pay $3 on Venmo 🤖😊", "https://venmo.com/SakritUser123?txn=pay&amount=3")
+st.sidebar.title("Models")
+tabs = ["Home","E.Coli Detection","Cancer Detection","Blood test Analyzer","Info"]
+selected_tab = st.sidebar.radio("Select A Model",tabs)
+
 if st.button("Go to Multi-Emotions Page"):
     st.session_state.page = "multiemotions"
 
