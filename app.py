@@ -23,7 +23,7 @@ if selected_tab == "Home":
     GitHub: [The repository for this website!](https://github.com/SakritUser123/emotiontrackerai)
     """)
 
-if selected_tab == 'EmotionAI 1.0':
+if selected_tab == 'EmotionAI':
     with open('LogisticRegModel.pkl', 'rb') as f:
         loaded_model = pickle.load(f)
     with open('WorkVector.pkl', 'rb') as file:
