@@ -2,7 +2,7 @@ import streamlit as st
 st.set_page_config(page_title="Emotion Analyzer AI", page_icon="😃")
 import pickle
 
-tabs = ["Home", "EmotionAI ", "Multi Emotion AI"]
+tabs = ["Home", "EmotionAI", "Multi Emotion AI"]
 selected_tab = st.sidebar.radio("Select A Model", tabs)
 
 # Initialize session states for chat histories
