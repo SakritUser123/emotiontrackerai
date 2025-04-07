@@ -69,7 +69,7 @@ if selected_tab == 'EmotionAI 1.0':
 
             st.session_state.smaller_messages.append({"role": "assistant", "content": f"{emotion_response} {emoji} {res}"})
 
-if selected_tab == 'Emotion AI Advanced 2.0':
+if selected_tab == 'Emotion AI Advanced ':
     with open('MultiLogRegModel.pkl', 'rb') as f:
         multi_loaded_model = pickle.load(f)
     with open('MultiWorkVector.pkl', 'rb') as file:
