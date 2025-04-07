@@ -2,7 +2,7 @@ import streamlit as st
 st.set_page_config(page_title="Emotion Analyzer AI", page_icon="😃")
 import pickle
 
-tabs = ["Home", "Two Emotion Classification", "Multi Emotion Classification"]
+tabs = ["Home", "EmotionAI 1.0", "Emotion AI Advanced 2.0 "]
 selected_tab = st.sidebar.radio("Select A Model", tabs)
 
 # Initialize session states for chat histories
@@ -23,7 +23,7 @@ if selected_tab == "Home":
     GitHub: [The repository for this website!](https://github.com/SakritUser123/emotiontrackerai)
     """)
 
-if selected_tab == 'Two Emotion Classification':
+if selected_tab == 'EmotionAI 1.0':
     with open('LogisticRegModel.pkl', 'rb') as f:
         loaded_model = pickle.load(f)
     with open('WorkVector.pkl', 'rb') as file:
@@ -69,7 +69,7 @@ if selected_tab == 'Two Emotion Classification':
 
             st.session_state.smaller_messages.append({"role": "assistant", "content": f"{emotion_response} {emoji} {res}"})
 
-if selected_tab == 'Multi Emotion Classification':
+if selected_tab == 'Emotion AI Advanced 2.0':
     with open('MultiLogRegModel.pkl', 'rb') as f:
         multi_loaded_model = pickle.load(f)
     with open('MultiWorkVector.pkl', 'rb') as file:
