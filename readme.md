@@ -1,3 +1,14 @@
+UPDATES 4/7/25
+---------------------------------------------
+* Adding Motivational Statements to each emotion and removing home tab making multi-emotion classification the default one.
+* Moved the donate button and contact details to the model tabs.
+
+UPDATES 4/6/25
+---------------------------------------------
+* Made tabs for the Sentiment Classifier
+* Created the Multi-Emotion Classifier
+* Also, seperated the two models and improved design and layout of site.
+
 UPDATES 4/5/25
 ----------------------------------------------
 * Changed to Logistic Regression Model instead of DL model and improved the model.More Accurate now in sentiment analysis.
