@@ -98,5 +98,5 @@ if selected_tab == 'Multi Emotion AI':
             with st.chat_message("assistant"):
                 st.markdown(explain)
                 st.markdown(predictions)
-
+                st.markdown(probabilities)
             st.session_state.larger_messages.append({"role": "assistant", "content": predictions})
