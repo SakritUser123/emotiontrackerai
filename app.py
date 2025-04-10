@@ -110,7 +110,7 @@ if selected_tab == 'Multi Emotion AI':
                 st.markdown(predictions)
                 for i in range(len(probabilities)):
                     emotion = label_to_text[i]
-                    percent = probabilities[i] * 100
+                    percent = round(probabilities[i] * 100,2)
                     st.markdown(f"- **{emotion.capitalize()}**: {percent}%")
                 
             st.session_state.larger_messages.append({"role": "assistant", "content": predictions})
