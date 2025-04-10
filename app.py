@@ -108,7 +108,7 @@ if selected_tab == 'Multi Emotion AI':
             with st.chat_message("assistant"):
                 st.markdown(explain)
                 st.markdown(predictions)
-                for i in range(5):
+                for i in range(len(probabilities):
                     emotion = label_to_text[i]
                     percent = probabilities[i] * 100
                     st.markdown(f"- **{emotion.capitalize()}**: {percent}%")
