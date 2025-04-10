@@ -94,7 +94,7 @@ if selected_tab == 'Multi Emotion AI':
             user_input_list = [user_input]
             predictions = multi_loaded_model.predict(multi_vectorizer.transform([user_input]))
             explain = '0 is for sadness , 1 is for joy,2 is for love , 3 is for anger , 4 is for fear and 5 is for surprise'
-            probabilities = multi_loaded_model.predict_proba(multi_vectorizer.transform([user_input]))
+            probabilities = multi_loaded_model.predict_proba(multi_vectorizer.transform([user_input]))[0]
             label_to_text = {
             0:'sadness',
             1:'joy',
@@ -108,7 +108,7 @@ if selected_tab == 'Multi Emotion AI':
             with st.chat_message("assistant"):
                 st.markdown(explain)
                 st.markdown(predictions)
-                for i in range(len(probabilities):
+                for i in range(len(probabilities)):
                     emotion = label_to_text[i]
                     percent = probabilities[i] * 100
                     st.markdown(f"- **{emotion.capitalize()}**: {percent}%")
