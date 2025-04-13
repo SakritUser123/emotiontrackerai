@@ -2,7 +2,7 @@ import streamlit as st
 st.set_page_config(page_title="Emotion Analyzer AI", page_icon="😃")
 import pickle
 
-tabs = ["Home", "EmotionAI", "Multi Emotion AI"]
+tabs = ["Multi EmotionAI", "Emotion AI"]
 selected_tab = st.sidebar.radio("Select A Model", tabs)
 
 # Initialize session states for chat histories
@@ -12,16 +12,9 @@ if "smaller_messages" not in st.session_state:
 if "larger_messages" not in st.session_state:
     st.session_state.larger_messages = []
 
-if selected_tab == "Home":
-    st.title("Home Page")
-    st.write("Use the navigation bar to navigate the various models on the website!")
-    st.link_button("💻 Pay $3 on Venmo 🤖😊", "https://venmo.com/SakritUser123?txn=pay&amount=3")
-    st.write("You can donate to this website; it will help out a lot!")
-    st.markdown("""
-    ---
-    Contact: [veerendrasakthi.prabhurajan@gmail.com]  
-    GitHub: [The repository for this website!](https://github.com/SakritUser123/emotiontrackerai)
-    """)
+
+    
+    
 
 if selected_tab == 'EmotionAI':
     with open('LogisticRegModel.pkl', 'rb') as f:
@@ -76,7 +69,13 @@ if selected_tab == 'Multi Emotion AI':
         multi_vectorizer = pickle.load(file)
 
     st.title("💬 Multi Emotion Analyzer AI")
-
+    st.link_button("💻 Pay $3 on Venmo 🤖😊", "https://venmo.com/SakritUser123?txn=pay&amount=3")
+    st.write("You can donate to this website; it will help out a lot!")
+    st.markdown("""
+    ---
+    Contact: [veerendrasakthi.prabhurajan@gmail.com]  
+    GitHub: [The repository for this website!](https://github.com/SakritUser123/emotiontrackerai)
+    """)
     # Display previous chat messages for Larger Emotion
     for msg in st.session_state.larger_messages:
         with st.chat_message(msg["role"]):
